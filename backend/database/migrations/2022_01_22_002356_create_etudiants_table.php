@@ -15,10 +15,10 @@ class CreateEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->BigIncrements('id');
-            $table->string('fullName');
+            $table->string('name');
+            $table->string('firstName');
             $table->string('email');
             $table->string('appoge');
-            $table->string('sex');
             $table->string('password');
             $table->integer('coach_id')->default(0);
             $table->integer('etudiant_vie')->default(100);

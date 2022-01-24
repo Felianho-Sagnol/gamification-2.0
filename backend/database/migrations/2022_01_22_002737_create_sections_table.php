@@ -16,9 +16,9 @@ class CreateSectionsTable extends Migration
         Schema::create('sections', function (Blueprint $table) {
             $table->BigIncrements('id');
             $table->string('name');
+            $table->string('imageUrl');
             $table->integer('scoreMax');
-            $table->float('coefficient');
-            $table->integer('section_status')->default(0);
+            $table->integer('coach_id')->default(0);
             $table->timestamps();
         });
     }
