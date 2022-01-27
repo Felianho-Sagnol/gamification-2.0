@@ -11,14 +11,14 @@ class SectionController extends Controller
     {
         $s1 = new Section;
         $s1->name = "Les Verrous mentaux";
-        $s1->imageUrl = 'verroumentaux.png';
+        $s1->imageUrl = "verroumentaux.png";
         $s1->scoreMax = 50;
 
         $s1->save();
 
         $s2 = new Section;
         $s2->name = "Le processus de prise de décision rationnelle.";
-        $s2->imageUrl = 'prisedecision.png';
+        $s2->imageUrl = "prisedecision.png";
         $s2->scoreMax = 50;
 
         $s2->save();
@@ -28,7 +28,10 @@ class SectionController extends Controller
 
     public function getSections(Request $request)
     {
-        return response()->json(Section::all(), 200);
+        $data = [
+            "sections" => Section::all(),
+        ];
+        return response()->json($data, 200);
     }
 
     public function getSectionById(Request $request){

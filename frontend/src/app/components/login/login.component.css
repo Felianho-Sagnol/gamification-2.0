@@ -1,0 +1,44 @@
+.login {
+    padding: 20px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.4);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.loginPage {
+    padding: 40px;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.submitBtn {
+    color: rgb(51, 49, 49) !important;
+    font-weight: bold;
+}
+
+.auth:hover {
+    cursor: pointer !important;
+}
+
+.noAccount {
+    color: rgb(51, 49, 49);
+    font-weight: bold;
+}
+
+.userLogin {
+    color: rgb(51, 49, 49);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.connexion {
+    color: rgb(51, 49, 49);
+    font-weight: bold;
+}
+
+.error {
+    color: red !important;
+}

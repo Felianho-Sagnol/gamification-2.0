@@ -14,11 +14,11 @@ Route::post(
 )->name('register');
 
 Route::post(
-    'auth/logIn',
+    'auth/login',
     [
-        EtudiantController::class,'logIn'
+        EtudiantController::class,'login'
     ]
-)->name('logIn');
+)->name('login');
 
 Route::get(
     'auth/isAuthenticated',
@@ -26,6 +26,13 @@ Route::get(
         EtudiantController::class,'isAuthenticated'
     ]
 )->name('isAuthenticated');
+
+Route::post(
+    'auth/getEtudiantById',
+    [
+        EtudiantController::class,'getEtudiantById'
+    ]
+)->name('getEtudiantById');
 
 Route::get(
     'auth/logOut',

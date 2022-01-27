@@ -56,7 +56,7 @@ class EtudiantController extends Controller
         }
     }
 
-    public function logIn(Request $request){
+    public function login(Request $request){
         $message = null;
         $error = null;
 
@@ -93,6 +93,14 @@ class EtudiantController extends Controller
     public function logOut(Request $request){
         $data = [
             "state" => true,
+        ];
+        return response()->json($data, 200);
+    }
+
+    public function getEtudiantById(Request $request){
+        $etudiant = Etudiant::where('id',$request->input('id'))->first();
+        $data = [
+            "user" => $etudiant,
         ];
         return response()->json($data, 200);
     }

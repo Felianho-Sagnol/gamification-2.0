@@ -1,0 +1,37 @@
+<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+    <a routerLink="/home" class="navbar-brand d-flex w-50 mr-auto ">
+        <img style="width:70px; height:50px" src="assets/images/logo.svg" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+  <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <div *ngIf="" class="progress" style="width: 100%">
+            <!-- 50em = half the screen width -->
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end rigthIcons">
+            <li *ngIf="" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-cog mr-1"></i>Paramètres
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><i class="fas fa-poll mr-1"></i>Mes Statistiques</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i> Mon Profile</a>
+                    <a class="dropdown-item btn"><i class="fas fa-power-off mr-1"></i> Déconnexion</a>
+                </div>
+            </li>
+            <li *ngIf="" class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-star star"></i><i class="far fa-star star"></i><i class="far fa-star star"></i>
+                </a>
+            </li>
+            <li *ngIf="" class="nav-item">
+                <a routerLink='/login/false' class="nav-link auth">
+                    <i class="fas fa-sign-in-alt mr-2"></i>Authentification
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>

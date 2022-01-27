@@ -1,0 +1,41 @@
+.navbar {
+    background-color: rgb(55, 127, 223);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.6);
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.star {
+    font-size: 20px !important;
+}
+
+.dropdown-menu {
+    width: 250px !important;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.4);
+    background-color: white;
+}
+
+.dropdown-item {
+    background-color: white;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+    background-color: white !important;
+}
+
+.navbar-toggler {
+    background-color: rgb(55, 127, 223);
+}

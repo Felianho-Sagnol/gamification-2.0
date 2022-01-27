@@ -1,0 +1,41 @@
+<div>
+    <div class="container-fluid loginPage">
+        <div class="row mt-3">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 login">
+                <h2 class="text-center mb-4"><i class="fas fa-user userLogin"></i></h2>
+                <h4 class="text-center mb-4 connexion">CONNEXION</h4>
+                <hr />
+                <div class="form-group mt-5 mb-4">
+                    <input [(ngModel)]="user.email" type="email" class="form-control form-control-sm" id="" aria-describedby="emailHelp" placeholder="Votre Email ..." />
+                    <small *ngIf="!isEmailValide() && isSubmited" id="" class="form-text text-muted error">
+                          Renseignez votre adresse email de connexion.
+                    </small>
+                </div>
+                <div class="form-group mb-4">
+                    <input [(ngModel)]="user.password" type="password" class="form-control form-control-sm" id="" placeholder="Mot de passe ..." />
+
+                    <small *ngIf="!isPasswordValide() && isSubmited" id="" class="form-text text-muted error">
+                          Au moins 8 caractères.
+                        </small>
+                    <small *ngIf="isConnexionError() && isSubmited" id="" class="form-text text-muted error mt-4">
+                          {{ connexionError }}
+                        </small>
+                </div>
+                <div class="form-group">
+                    <a (click)="login()" class="submitBtn text-center btn btn-sm">Se Connecter</a>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a class="btn btn-sm text-end noAccount">Mot de passe oublié ?</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a routerLink="/register" class="btn btn-sm noAccount">Pas de compte ?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>

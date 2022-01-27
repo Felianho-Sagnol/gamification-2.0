@@ -1,0 +1,35 @@
+.section-container {
+    background-color: white;
+}
+
+.container-fluid {
+    margin-top: 70px;
+    padding: 40px;
+}
+
+.setion-item {
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.4);
+}
+
+.startBtn {
+    margin-top: 35px;
+    background-color: rgb(55, 127, 223);
+    color: white;
+    font-weight: bold;
+}
+
+.rowItem {
+    margin-top: 30px;
+}
+
+.img {
+    height: 150px;
+    width: 100%;
+}
+
+.rowContainer {
+    padding: 10px;
+}
